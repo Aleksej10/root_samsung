@@ -11,16 +11,16 @@
   * press `volume up` to continue
   
 - Check for `OEM LOCK`, possible values:
-  ON  (L):  fully locked
-  ON  (U):  locked, but unlocking is enabled
-  OFF (U):  fully unlocked
+  * ON  (L):  fully locked
+  * ON  (U):  locked, but unlocking is enabled
+  * OFF (U):  fully unlocked
 
   If no value is shown, DO NOT PROCEED
 
 - For phones with KnoxGuard, check for `KG STATUS`, possible values:
-  ACTIVE, LOCKED:  locked
-  PRENORMAL:  temporarily locked, reching 168h of uptime should trigger unlock
-  CHECKING, COMPLETED, BROKEN:  unlocked
+  * ACTIVE, LOCKED:  locked
+  * PRENORMAL:  temporarily locked, reching 168h of uptime should trigger unlock
+  * CHECKING, COMPLETED, BROKEN:  unlocked
 
   Locked KnoxGuard will prevent you from installing Magisk
 
@@ -93,7 +93,9 @@ In the downloaded firmware you should find 5 crucial files named like this:
     `CSC -> CSC_*.tar_md5`
 
   Data should be wiped again, so install and open Magisk
+
   Magisk will promt you to do one last finishing step (just click `ok` or `yes`, or whatever pops in the prompt)
+
   After that the phone will reboot and you should be rooted
 
 ## Clean flash
