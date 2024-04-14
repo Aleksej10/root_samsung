@@ -67,7 +67,7 @@ In the downloaded firmware you should find 5 crucial files named like this:
 - OR, you could do the following:
   * Regardless of your `CSC`, just choose `INS` (India)
     Some features are blocked in some countries (like call recording), India has everything unlocked
-  * Proceed to [Clean flash](##clean-flash)
+  * Proceed to [Clean flash](#clean-flash)
 
 3) Root
   - extract `init_boot.img.lz4` from `AP` (AP_*.tar.md5 is just a compressed file)
@@ -86,7 +86,7 @@ In the downloaded firmware you should find 5 crucial files named like this:
   - transfer generated file back to laptop
     ![](magisk_patch.jpg)
 
-  Do everything like in [Clean flash](##clean-flash), except for choosing files:
+  Do everything like in [Clean flash](#clean-flash), except for choosing files:
     `AP  -> magisk generated file`
     `BL  -> BL_*.tar.md5`
     `CP  -> CP_*.tar.md5`
