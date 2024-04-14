@@ -87,10 +87,13 @@ In the downloaded firmware you should find 5 crucial files named like this:
     ![](magisk_patch.jpg)
 
   Do everything like in [Clean flash](#clean-flash), except for choosing files:
-    * `AP  -> magisk generated file`
-    * `BL  -> BL_*.tar.md5`
-    * `CP  -> CP_*.tar.md5`
-    * `CSC -> CSC_*.tar_md5`
+
+  ```
+    AP  -> magisk generated file`
+    BL  -> BL_*.tar.md5`
+    CP  -> CP_*.tar.md5`
+    CSC -> CSC_*.tar_md5`
+  ```
 
   Data should be wiped again, so install and open Magisk
 
@@ -105,10 +108,13 @@ In case you fuck something up, you can always flash a clean firmware:
 - Open Odin (`right click` -> `Run as administrator`)
   ![](odin_init.png)
 - Select files for:
-  * `AP` (this will take some time)
-  * `BL`
-  * `CP`
-  * `CSC`
+
+  ```
+    AP (this will take some time)
+    BL
+    CP
+    CSC
+  ```
   ![](odin_files_selected.png)
 - Boot phone to `Download mode`
 - Odin should register the phone 
