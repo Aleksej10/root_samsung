@@ -95,6 +95,8 @@ In the downloaded firmware you should find 5 crucial files named like this:
     CSC -> CSC_*.tar_md5`
   ```
 
+  NOTE: In case this fails, try you can try booting into recovery mode, recovery wiping data, and flashing only AP file (magisk generated one). In this case, in Odin, disable `Auto Reboot` and after flashing the AP file, go into recovery mode first and wipe `/data`, and only then boot into system.
+
   Data should be wiped again, so install and open Magisk
 
   Magisk will promt you to do one last finishing step (just click `ok` or `yes`, or whatever pops in the prompt)
@@ -123,3 +125,19 @@ In case you fuck something up, you can always flash a clean firmware:
 - Green `PASS` should appear upon successfull operation
 
 Phone will auto reboot
+
+## Play Integrity Fix
+
+In order to use some functionalities (like enabling RCS chat), you will also need to apply [Play Integrity Fix](https://github.com/chiteroman/PlayIntegrityFix) Magisk module.
+
+- Download `PlayIntegrityFix_vXX.Y.Z.zip` from [official releases page](https://github.com/chiteroman/PlayIntegrityFix/releases/).
+- Transfer it, via `adb` to the phone.
+- *Make sure* that `Zygisk` is enabled in Magisk.
+- Open *modules* tab, and flash transferred zip file.
+- Reboot device.
+
+In order to check PI, use `Play Integrity API Checker` from [here](https://github.com/1nikolas/play-integrity-checker-app) or [here](https://play.google.com/store/apps/details?id=gr.nikolasspyr.integritycheck).
+
+After requesting the attestation in `Play Integrity API`, you should get passing results on MEETS_BASIC_INTEGRITY and MEETS_DEVICE_INTEGRITY.
+
+NOTE: In case you are looking for SafetyNet fix - [SafetyNet is obsolete](https://developer.android.com/privacy-and-security/safetynet/deprecation-timeline).
